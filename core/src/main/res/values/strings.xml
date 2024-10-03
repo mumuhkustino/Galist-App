@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Galist App</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="nav_header_title">Mumuh Kustino Muharram</string>
+    <string name="nav_header_subtitle">mumuhandev@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_favorite">Favorite</string>
+    <string name="image">Image</string>
+
+    <string name="no_data">Empty data</string>
+    <string name="something_wrong">Oops.. something went wrong</string>
+    <string name="title_favorite">Favorite</string>
+</resources>
