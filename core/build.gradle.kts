@@ -69,4 +69,8 @@ dependencies {
     implementation(libs.androidx.room.ktx)
 
     api(libs.koin.android)
+    api(libs.leakcanary.android)
+
+    implementation(libs.android.database.sqlcipher)
+    implementation(libs.androidx.sqlite.ktx)
 }
