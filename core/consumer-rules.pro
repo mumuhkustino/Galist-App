@@ -26,11 +26,15 @@
 -keep class * implements com.google.gson.JsonDeserializer
  
 # Prevent R8 from leaving Data object members always null
--keepclassmembers,allowobfuscation class * {
+-keepclassmembers class * {
+<init>(...);
 @com.google.gson.annotations.SerializedName <fields>;
 }
- 
- 
+
+# Retain generic signatures of TypeToken and its subclasses with R8 version 3.0 and higher.
+-keep,allowobfuscation,allowshrinking class com.google.gson.reflect.TypeToken
+-keep,allowobfuscation,allowshrinking class * extends com.google.gson.reflect.TypeToken
+
 ##---------------Begin: proguard configuration for Retrofit ----------
 # Retrofit does reflection on generic parameters. InnerClasses is required to use Signature and
 # EnclosingMethod is required to use InnerClasses.
